@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int x, y, z;
+    double k;
+
+    printf("Введіть значення x ");
+    scanf("%d", &x);
+    printf("Введіть значення y ");
+    scanf("%d", &y);
+    printf("Введіть значення z ");
+    scanf("%d", &z);
+  
+    k = sqrt(x) + 2 * cbrt(y * y) / (cbrt(y) - 2 * sqrt(x * z));
+
+    printf("Значення функції: %lf\n", k);
+
+    return 0;
+}
